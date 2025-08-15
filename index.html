@@ -3,46 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB</title>
-    <!-- Conectamos el CSS -->
+    <title>IBX | Web Oficial</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1></h1>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#contacto">Contacto</a>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>IBX</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Galería</a></li>
+                <li><a href="#servicios">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
         </nav>
     </header>
 
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <p>enlaces importantes.</p>
-        <a href="https://www.youtube.com/watch?v=KWb1ChnoCVE">mi cuenta de ff</a>
-        <button id="botonClick">Haz clic aquí</button>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a <span>IBX</span></h1>
+            <p>Diseño Web Para una galería virtual</p>
+            <a href="#servicios" class="btn-primary">Galería</a>
+        </div>
     </section>
 
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Pues la verdad es que soy gay</p>
+    <section id="Galeria" class="section">
+        <h2>galería</h2>
+        <p>Una web creada para una galeria virtual editable</p>
+        <img src="https://i.pinimg.com/236x/05/49/86/05498664d54894f92c6523c50c1eb9e6.jpg" alt="Galería de imágenes">
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form id="formulario">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo" required>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    <section id="servicios" class="section dark">
+        <h2>Redes sociales de el programador mas guapo</h2>
+        <div class="cards">
+            <div class="card"><a href="https://www.instagram.com/darwin_x67/" target="_blank" class="btn-ig">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40" height="40">
+  Instagram
+</a></div>
+        </div>
 
-    <footer>
-        <p>© 2025</p>
+    <footer class="footer">
+        <p>© 2025 IBX. Todos los derechos reservados.</p>
     </footer>
-
-    <!-- Conectamos el JavaScript -->
-    <script src="script.js"></script>
 </body>
 </html>
