@@ -1,10 +1,6 @@
-// Acción del botón
-document.getElementById("botonClick").addEventListener("click", function() {
-    alert("¡Hola! Gracias por visitar mi web 😃");
-});
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-// Validación simple del formulario
-document.getElementById("formulario").addEventListener("submit", function(e) {
-    e.preventDefault(); // Evita recargar la página
-    alert("Formulario enviado correctamente 👍");
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
 });
