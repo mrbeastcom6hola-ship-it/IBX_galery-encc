@@ -25,7 +25,7 @@
     <section id="inicio" class="hero">
         <div class="hero-content">
             <h1>Bienvenido a <span>IBX</span></h1>
-            <p>Diseño Web Para una galería virtual</p>
+            <p>Heroes/hub</p>
             <a href="#Galería" class="btn-primary">Galería</a>
         </div>
     </section>
@@ -56,8 +56,9 @@
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     .imagen {
-        width: 15px;  /* Tamaño de la imagen */
-        height: 40px; /* alto de la imagen */
+      max-width: 150px; /* ancho máximo de la imagen */
+      width: 100%; /* ancho de la imagen */
+        height: auto; /* alto de la imagen */
         background-color: #eaeaea; /* Fondo gris para indicar que falta imagen */
         border-radius: 6px;
         display: flex;
@@ -78,6 +79,18 @@
         font-size: 15px;
         line-height: 1.5;
         color: #333;
+    }
+      /* Responsive para móviles */
+    @media (max-width: 768px) {
+        .lista-item {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .imagen-hero {
+            max-width: 100%; /* Imagen ocupa todo el ancho en móvil */
+        }
     }
 </style>
 </head>
@@ -112,7 +125,7 @@
     </div>
 </div>
 <div class="lista-item">
-    <img src="Galería de imágenes/joshua.jpeg" alt="Imagen héroe" style="width:150px; height:auto; border-radius:6px;">
+    <img src="Galería de imágenes/joshua.jpeg"Imagen héroe" style="width:150px; height:auto; border-radius:6px;">
     <div class="contenido">
         <h2>3. Joshua "El veloz"</h2>
         <p>
@@ -125,22 +138,8 @@
             Superpoder: regala goles en partidos importantes.
         </p>
     </div>
-    <div class="lista-item">
-    <img src="Galería de imágenes/no la conozco.jpeg" alt="Imagen héroe" style="width:150px; height:auto; border-radius:6px;">
-    <div class="contenido">
-        <h2>4. Gordiana</h2>
-        <p>
-            Esta individua se hace llamar "Gordiana" y tiene 7 grandes super poderes.
-        </p>
-        <p>
-            Dato curioso: un dia dijo que siempre le gusto el numero de la suerte "7". y desde ese entonces tiene varios encuentros con el numero 7.
-        </p>
-        <p>
-            Superpoder: le gustan las cosas minimalistas tiene la capacidad de agrandar objetos a su antojo.
-        </p>
-    </div>
-    </div>
 </div>
+
 </body>
 </html>
     </section>
