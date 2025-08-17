@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 4px solid #ffffff; /* Línea separadora (elige el color) */
+    border-bottom: 4px solid #000000; /* Línea separadora (elige el color) */
 }
 
 .navbar {
